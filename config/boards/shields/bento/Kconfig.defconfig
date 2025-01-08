@@ -1,0 +1,6 @@
+if SHIELD_BENTO
+
+config ZMK_KEYBOARD_NAME
+    default "bento"
+
+endif

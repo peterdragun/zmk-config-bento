@@ -1,0 +1,30 @@
+/ {
+    chosen {
+        zmk,kscan = &default_kscan;
+    };
+
+    default_kscan: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "default_kscan";
+        input-gpios = <&pro_micro 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 008
+                      <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 022
+                      <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 029
+                      <&pro_micro 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 100
+                      <&pro_micro 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 031
+                      <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 111
+    };
+
+    encoder: encoder {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        status = "okay";
+        steps = <80>;
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder>;
+        triggers-per-rotation = <20>;
+    };
+};
