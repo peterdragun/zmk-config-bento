@@ -1,2 +1,2 @@
-config shield_bento
+config SHIELD_BENTO
     def_bool $(shield_list_contains,bento)
