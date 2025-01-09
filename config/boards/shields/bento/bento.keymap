@@ -5,7 +5,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        defalut_layer = {
+        default_layer = {
             bindings = <
                 &kp Z    &kp M       &kp C_MUTE
                 &mo 1    &kp LSHIFT  &mo 2
