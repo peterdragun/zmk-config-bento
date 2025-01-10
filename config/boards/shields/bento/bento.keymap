@@ -24,7 +24,7 @@
                 &kp A    &kp S  &kp C_MUTE
                 &kp D    &kp F  &kp G
             >;
-            sensor-bindings = <&msc SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&inc_dec_kp SCRL_LEFT SCRL_RIGHT>;
         };
     };
 };
