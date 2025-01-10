@@ -17,7 +17,14 @@
                 &kp Q    &kp W  &kp C_MUTE
                 &kp E    &kp R  &kp T
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp  C_VOL_UP C_VOL_DN>;
+        };
+        upper_layer {
+            bindings = <
+                &kp A    &kp S  &kp C_MUTE
+                &kp D    &kp F  &kp G
+            >;
+            sensor-bindings = <&msc SCRL_LEFT SCRL_RIGHT>;
         };
     };
 };
