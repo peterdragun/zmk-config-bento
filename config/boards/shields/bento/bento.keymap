@@ -25,8 +25,8 @@
         };
         upper_layer {
             bindings = <
-                &kp RGB_HUI    &kp RGB_SAI  &kp RGB_TOG
-                &kp RGB_HUD    &kp RGB_SAD  &kp RGB_EFF
+                &rgb_ug RGB_HUI    &rgb_ug RGB_SAI  &rgb_ug RGB_TOG
+                &rgb_ug RGB_HUD    &rgb_ug RGB_SAD  &rgb_ug RGB_EFF
             >;
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
