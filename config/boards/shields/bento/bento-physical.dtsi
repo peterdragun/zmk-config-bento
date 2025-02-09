@@ -12,7 +12,7 @@
 / {
     macro3x2_layount: macro3x2_layount {
         compatible = "zmk,physical-layout";
-        transform = <&default_transform>
+        transform = <&default_transform>;
         display-name = "6 Key";
 
         keys  //                     w   h    x    y     rot    rx    ry
