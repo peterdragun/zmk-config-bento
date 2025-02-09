@@ -1,3 +1,4 @@
+#include <dt-bindings/zmk/matrix_transform.h>
 #include "bento-physical.dtsi"
 
 / {
@@ -9,6 +10,7 @@
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
+        transform = <&default_transform>;
         input-gpios = <&pro_micro 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 008
                       <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 022
                       <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP )>, // 029
