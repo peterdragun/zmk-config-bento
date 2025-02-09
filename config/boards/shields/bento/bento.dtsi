@@ -1,9 +1,0 @@
-#include "bento-physical.dtsi"
-
-
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,physical-layout = &macro3x2_layount;
-    };
-};

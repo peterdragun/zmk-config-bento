@@ -12,6 +12,7 @@
 / {
     macro3x2_layount: macro3x2_layount {
         compatible = "zmk,physical-layout";
+        transform = <&default_transform>
         display-name = "6 Key";
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -26,7 +27,7 @@
 };
 
 &layouts_bento_position_map {
-    foostan_bento_posmap: six {
+    bento_posmap: six {
         physical-layout = <&macro3x2_layount>;
         positions
             = < 0  1  2 >
