@@ -1,0 +1,35 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    layouts_bento_position_map: layouts_bento_position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+    };
+};
+
+
+/ {
+    3x2macro_layount: 3x2macro_layount {
+        compatible = "zmk,physical-layout";
+        display-name = "6 Key";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+        ;
+    };
+};
+
+&layouts_bento_position_map {
+    foostan_bento_posmap: six {
+        physical-layout = <&3x2macro_layount>;
+        positions
+            = < 0  1  2 >
+            , < 3  4  5>;
+    };
+};
