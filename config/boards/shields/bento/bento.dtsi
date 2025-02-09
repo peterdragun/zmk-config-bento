@@ -1,9 +1,5 @@
 #include "bento-physical.dtsi"
 
-&macro3x2_layount {
-    transform = <&default_transform>;
-};
-
 
 / {
     chosen {
