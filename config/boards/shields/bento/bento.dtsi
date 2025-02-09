@@ -1,0 +1,13 @@
+#include "bento-physical.dtsi"
+
+&macro3x2_layount {
+    transform = <&default_transform>;
+};
+
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &macro3x2_layount;
+    };
+};

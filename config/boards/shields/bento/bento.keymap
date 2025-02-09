@@ -9,7 +9,7 @@
 
 / {
     chosen {
-        zmk,physical-layout = &3x2macro_layount;
+        zmk,physical-layout = &macro3x2_layount;
     };
 };
 
